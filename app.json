@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "하트비트",
+    "slug": "heartbeat",
+    "scheme": "heartbeat",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E5484D",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.clickable3.heartbeat",
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "가까운 AED를 찾고 심정지 신고 위치를 보내려고 현재 위치를 사용해요."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#E5484D"
+        }
+      ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "83379d49-cde5-4915-a9c6-75e076ba3de0"
+      }
+    },
+    "owner": "clickable3"
+  }
+}
